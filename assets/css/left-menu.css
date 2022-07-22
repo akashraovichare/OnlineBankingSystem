@@ -1,0 +1,331 @@
+/*-----Left menu-------*/
+
+#left-menu .sub-left-menu {
+  background-color: #fff;
+  left: 0;
+  padding-top: 10px;
+  z-index:6;
+  width: 250px;
+  height: 88%;
+  position: fixed;
+  overflow-y: hidden;
+  border-top:1px solid #ddd;
+}
+
+#left-menu .sub-left-menu a {
+  color: black;
+  cursor:pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+#left-menu .sub-left-menu .right-arrow {
+  float: right;
+  padding-top: 13px;
+}
+
+#left-menu .sub-left-menu a:hover {
+  background: none;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
+  text-decoration: none;
+}
+
+#left-menu .sub-left-menu span {
+  padding-right: 10px;
+}
+
+#left-menu .sub-left-menu li {
+  line-height: 44px;
+}
+
+#left-menu .sub-left-menu .active {
+  border-left: 4px solid #C1B8B8;
+}
+
+#left-menu .sub-left-menu .active {
+  width: 100%;
+}
+#left-menu .sub-left-menu .time h1 {
+  font-weight: 500;
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: #918C8C;
+}
+
+#left-menu .sub-left-menu .time p {
+  margin-top: -20px;
+  text-align: center;
+  font-size: 12px;
+  color: #918C8C;
+}
+
+#left-menu .sub-left-menu .tree {
+  background-color: #F6F8F8;
+  padding: 0px;
+  margin: 0px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+#left-menu .sub-left-menu .tree li {
+  padding: 0px;
+  padding-left: 10%;
+}
+
+.opener-left-menu {
+  float: left;
+  padding: 10px;
+  padding-top: 25px;
+  /*color: #1289A7;*/
+  color: yellowgreen;
+  cursor: pointer;
+}
+
+
+.opener-left-menu.is-open {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.opener-left-menu:hover,
+.opener-left-menu:focus,
+.opener-left-menu:active {
+  outline: none;
+}
+
+.opener-left-menu.is-closed:before {
+  content: '';
+  display: block;
+  width: 30px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.opener-left-menu.is-closed:hover:before {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  display: block;
+  -webkit-transform: translate3d(-100px, 0, 0);
+  -moz-transform: translate3d(-100px, 0, 0);
+  -ms-transform: translate3d(-100px, 0, 0);
+  -o-transform: translate3d(-100px, 0, 0);
+  transform: translate3d(-100px, 0, 0);
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.opener-left-menu.is-closed .top,
+.opener-left-menu.is-closed .middle,
+.opener-left-menu.is-closed .bottom,
+.opener-left-menu.is-open .top,
+.opener-left-menu.is-open .middle,
+.opener-left-menu.is-open .bottom {
+  position: absolute;
+  height: 4px;
+  width: 35px;
+}
+
+.opener-left-menu.is-closed .top,
+.opener-left-menu.is-closed .middle,
+.opener-left-menu.is-closed .bottom {
+  background-color: #61a5a3;
+}
+
+.opener-left-menu.is-closed .top {
+  top: 25px;
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.opener-left-menu.is-closed .middle {
+  top: 34px;
+}
+
+.opener-left-menu.is-closed .bottom {
+  top: 42px;
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.opener-left-menu.is-closed:hover .top {
+  top: 20px;
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.opener-left-menu.is-closed:hover .bottom {
+  bottom: 0px;
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.opener-left-menu.is-open .top,
+.opener-left-menu.is-open .middle,
+.opener-left-menu.is-open .bottom {
+  background-color: #1289A7;
+}
+
+.opener-left-menu.is-open .top,
+.opener-left-menu.is-open .bottom {
+  margin-top: -2px;
+}
+
+.opener-left-menu.is-open .top {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+  -moz-transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+  -ms-transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+  -o-transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+  transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+}
+
+.opener-left-menu.is-open .middle {
+  display: none;
+}
+
+.opener-left-menu.is-open .bottom {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin-left:10px;
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+  -moz-transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+  -ms-transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+  -o-transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+  transition: -webkit-transform .2s cubic-bezier(.73, 1, .28, .08);
+}
+
+.opener-left-menu.is-open:before {
+  content: '';
+  display: block;
+  width: 30px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.opener-left-menu.is-open:hover:before {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  display: block;
+  -webkit-transform: translate3d(-100px, 0, 0);
+  -moz-transform: translate3d(-100px, 0, 0);
+  -ms-transform: translate3d(-100px, 0, 0);
+  -o-transform: translate3d(-100px, 0, 0);
+  transform: translate3d(-100px, 0, 0);
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.content {
+  padding: 0px;
+  padding-bottom: 10px;
+  padding-left: 250px;
+  width: 100%;
+  color:#58666e!important;
+  max-height:100%;
+  overflow:auto;
+  overflow-x:hidden;
+}
+@media (max-width: 767px) {
+  .content {
+    padding-left: 0px;
+  }
+}
+.tab-content{
+  width: 100%;
+  max-height:88%;
+  overflow:auto;
+  overflow-x:hidden;
+}
+@media all and (min-width:0px) and (max-width: 320px) {
+ .content {
+  margin-top:5px;
+  padding: 0px;
+  padding-bottom: 10px;
+  width: 100%;
+  color:#58666e!important;
+  max-height:88%;
+  overflow:auto;
+  overflow-x:hidden;
+}
+#left-menu .sub-left-menu {
+  background-color: #fff;
+  left: 0;
+  padding-top: 10px;
+  z-index:6;
+  width: 270px;
+  height: 88%;
+  position: fixed;
+  overflow-y: hidden;
+  border-top:1px solid #ddd;
+  display:none;
+}
+}
